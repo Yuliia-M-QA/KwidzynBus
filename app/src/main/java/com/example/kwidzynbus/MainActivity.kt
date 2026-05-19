@@ -195,25 +195,6 @@ fun BusScreen() {
         mutableStateOf("direction1")
     }
 
-    // =====================================================
-    // BACK HANDLER
-    // =====================================================
-
-    BackHandler {
-
-        when {
-
-            // Якщо відкритий конкретний розклад
-            selectedLine != null -> {
-                selectedLine = null
-            }
-
-            // Якщо відкритий список напрямків
-            selectedCategory != null -> {
-                selectedCategory = null
-            }
-        }
-    }
 
     // =====================================================
     // DATA
@@ -291,18 +272,23 @@ fun BusScreen() {
     // =====================================================
 
     Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(
-                Brush.verticalGradient(
-                    colors = listOf(
-                        Color(0xFF0F2027),
-                        Color(0xFF203A43),
-                        Color(0xFF2C5364)
-                    )
-                )
-            )
+        modifier = Modifier.fillMaxSize()
     ) {
+
+        Image(
+            painter = painterResource(R.drawable.bus_background),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Color.Black.copy(alpha = 0.45f)
+                )
+        )
 
         // =====================================================
         // HOME SCREEN
@@ -594,7 +580,11 @@ fun BusScreen() {
                                             Color(0xFF455A64)
                                 )
                             ) {
-                                Text("Kierunek 1")
+                                Text(
+                                    text = "▶ Kierunek 1",
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold
+                                )
                             }
 
                             Button(
@@ -612,7 +602,11 @@ fun BusScreen() {
                                             Color(0xFF455A64)
                                 )
                             ) {
-                                Text("Kierunek 2")
+                                Text(
+                                    text = "◀ Kierunek 2",
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold
+                                )
                             }
                         }
 
@@ -654,7 +648,11 @@ fun BusScreen() {
                                     ) {
 
                                         Text(
-                                            text = busStop.stop,
+                                            text =
+                                                if (expanded)
+                                                    "▼ ${busStop.stop}"
+                                                else
+                                                    "▶ ${busStop.stop}",
                                             color = Color.White,
                                             style = MaterialTheme.typography.titleMedium
                                         )
