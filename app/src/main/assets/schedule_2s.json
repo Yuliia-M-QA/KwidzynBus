@@ -1,0 +1,170 @@
+{
+  "direction1": [
+    {
+      "stop": "Dworzec PKP",
+      "times": ["5:05", "13:05"]
+    },
+    {
+      "stop": "Warszawska",
+      "times": ["5:08", "13:08"]
+    },
+    {
+      "stop": "Braterstwa Narodów",
+      "times": ["5:09", "13:09"]
+    },
+    {
+      "stop": "Stare Miasto",
+      "times": ["5:10", "13:10"]
+    },
+    {
+      "stop": "Batalionów Chłopskich",
+      "times": ["5:11", "13:11"]
+    },
+    {
+      "stop": "Hallera Szkoła",
+      "times": ["5:12", "13:12"]
+    },
+    {
+      "stop": "Hallera Szpital",
+      "times": ["5:14", "13:14"]
+    },
+    {
+      "stop": "Łużycka Połomskiego",
+      "times": ["5:15", "13:15"]
+    },
+    {
+      "stop": "Łużycka",
+      "times": ["5:16", "13:16"]
+    },
+    {
+      "stop": "Toruńska",
+      "times": ["5:17", "13:17"]
+    },
+    {
+      "stop": "Grunwaldzka Szkoła",
+      "times": ["5:19", "13:19"]
+    },
+    {
+      "stop": "Żwirowa Stadion",
+      "times": ["5:20", "13:20"]
+    },
+    {
+      "stop": "Żwirowa PKS",
+      "times": ["5:22", "13:22"]
+    },
+    {
+      "stop": "Lotnicza MM",
+      "times": ["5:25", "13:25"]
+    },
+    {
+      "stop": "Lotnicza Urząd Celny",
+      "times": ["5:27", "13:27"]
+    },
+    {
+      "stop": "Lotnicza Areszt",
+      "times": ["5:28", "13:28"]
+    },
+    {
+      "stop": "Lotnicza Jabil",
+      "times": ["5:30", "13:30"]
+    },
+    {
+      "stop": "Zielna",
+      "times": ["5:32", "13:32"]
+    },
+    {
+      "stop": "Sportowa ORLEN",
+      "times": ["5:34", "13:34"]
+    },
+    {
+      "stop": "Miłosna",
+      "times": ["5:37", "13:37"]
+    },
+    {
+      "stop": "Bądki PLATI",
+      "times": ["5:39", "13:39"]
+    },
+    {
+      "stop": "Miłosna JABIL",
+      "times": ["5:41", "13:41"]
+    }
+  ],
+  "direction2": [
+    {
+      "stop": "Miłosna JABIL",
+      "times": ["6:10", "14:10"]
+    },
+    {
+      "stop": "Miłosna PLATI",
+      "times": ["6:12", "14:12"]
+    },
+    {
+      "stop": "Miłosna",
+      "times": ["6:14", "14:14"]
+    },
+    {
+      "stop": "Zielna",
+      "times": ["6:17", "14:17"]
+    },
+    {
+      "stop": "Lotnicza Jabil",
+      "times": ["6:20", "14:20"]
+    },
+    {
+      "stop": "Lotnicza Areszt",
+      "times": ["6:22", "14:22"]
+    },
+    {
+      "stop": "Lotnicza Urząd Celny",
+      "times": ["6:23", "14:23"]
+    },
+    {
+      "stop": "Lotnicza MM",
+      "times": ["6:25", "14:25"]
+    },
+    {
+      "stop": "Żwirowa PKS",
+      "times": ["6:27", "14:27"]
+    },
+    {
+      "stop": "Żwirowa Stadion",
+      "times": ["6:29", "14:29"]
+    },
+    {
+      "stop": "Toruńska",
+      "times": ["6:33", "14:33"]
+    },
+    {
+      "stop": "Łużycka",
+      "times": ["6:34", "14:34"]
+    },
+    {
+      "stop": "Hallera Szpital",
+      "times": ["6:35", "14:35"]
+    },
+    {
+      "stop": "Hallera Szkoła",
+      "times": ["6:36", "14:36"]
+    },
+    {
+      "stop": "Batalionów Chłopskich",
+      "times": ["6:37", "14:37"]
+    },
+    {
+      "stop": "Targowa",
+      "times": ["6:38", "14:38"]
+    },
+    {
+      "stop": "Braterstwa Narodów",
+      "times": ["6:39", "14:39"]
+    },
+    {
+      "stop": "Warszawska",
+      "times": ["6:40", "14:40"]
+    },
+    {
+      "stop": "Dworzec PKP",
+      "times": ["6:43", "14:43"]
+    }
+  ]
+}

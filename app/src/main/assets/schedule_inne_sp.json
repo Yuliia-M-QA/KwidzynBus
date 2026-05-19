@@ -1,0 +1,130 @@
+{
+  "direction1": [
+    {
+      "stop": "Miłosna JABIL",
+      "times": ["7:25", "8:25"]
+    },
+    {
+      "stop": "Miłosna PLATI",
+      "times": ["7:27", "8:27"]
+    },
+    {
+      "stop": "Miłosna",
+      "times": ["7:29", "8:29"]
+    },
+    {
+      "stop": "Sportowa ORLEN",
+      "times": ["7:32", "8:32"]
+    },
+    {
+      "stop": "Młynarska",
+      "times": ["7:34", "8:34"]
+    },
+    {
+      "stop": "Osiedle Zacisze",
+      "times": ["7:37", "8:37"]
+    },
+    {
+      "stop": "Wiejska Pływalnia",
+      "times": ["7:39", "8:39"]
+    },
+    {
+      "stop": "Polna Słoneczna",
+      "times": ["7:40", "8:40"]
+    },
+    {
+      "stop": "Korczaka",
+      "times": ["7:42", "8:42"]
+    },
+    {
+      "stop": "Żeromskiego",
+      "times": ["7:43", "8:43"]
+    },
+    {
+      "stop": "Polna Słoneczna",
+      "times": ["7:45", "8:45"]
+    },
+    {
+      "stop": "Polna Bloki",
+      "times": ["7:46", "8:46"]
+    },
+    {
+      "stop": "Wschodnia",
+      "times": ["7:47", "8:47"]
+    },
+    {
+      "stop": "Mickiewicza Bloki",
+      "times": ["7:48", "8:48"]
+    },
+    {
+      "stop": "Mickiewicza Przedszkole",
+      "times": ["7:49", "8:49"]
+    },
+    {
+      "stop": "Konopnickiej",
+      "times": ["7:52", "8:52"]
+    },
+    {
+      "stop": "Dworzec PKP",
+      "times": ["7:54", "8:54"]
+    }
+  ],
+  "direction2": [
+    {
+      "stop": "Mickiewicza Przedszkole",
+      "times": ["14:40", "15:35"]
+    },
+    {
+      "stop": "Mickiewicza Bloki",
+      "times": ["14:41", "15:36"]
+    },
+    {
+      "stop": "Wschodnia",
+      "times": ["14:42", "15:37"]
+    },
+    {
+      "stop": "Polna Bloki",
+      "times": ["14:43", "15:38"]
+    },
+    {
+      "stop": "Korczaka",
+      "times": ["13:49", "14:44", "15:39"]
+    },
+    {
+      "stop": "Żeromskiego",
+      "times": ["13:50", "14:45", "15:40"]
+    },
+    {
+      "stop": "Wiejska Pływalnia",
+      "times": ["13:52", "14:47", "15:42"]
+    },
+    {
+      "stop": "Osiedle Zacisze",
+      "times": ["13:54", "14:49", "15:44"]
+    },
+    {
+      "stop": "Sportowa ORLEN",
+      "times": ["13:55", "14:50", "15:45"]
+    },
+    {
+      "stop": "Młynarska",
+      "times": ["13:57", "14:52", "15:47"]
+    },
+    {
+      "stop": "Sportowa ORLEN",
+      "times": ["14:00", "14:55", "15:50"]
+    },
+    {
+      "stop": "Miłosna",
+      "times": ["14:03", "14:58", "15:53"]
+    },
+    {
+      "stop": "Bądki PLATI",
+      "times": ["14:05", "15:00", "15:55"]
+    },
+    {
+      "stop": "Miłosna JABIL",
+      "times": ["14:07", "15:02", "15:57"]
+    }
+  ]
+}
