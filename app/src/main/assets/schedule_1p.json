@@ -1,127 +1,251 @@
 {
-  "direction1": [
-    {
-      "stop": "Osiedle Sybiraków",
-      "times": ["5:10", "13:10"]
-    },
-    {
-      "stop": "Sybiraków",
-      "times": ["5:11", "13:11"]
-    },
-    {
-      "stop": "Sokola Krzywoustego",
-      "times": ["5:12", "13:12"]
-    },
-    {
-      "stop": "Osiedle Piastowskie",
-      "times": ["5:13", "13:13"]
-    },
-    {
-      "stop": "Warszawska Chrobrego",
-      "times": ["5:14", "13:15"]
-    },
-    {
-      "stop": "Daszyńskiego",
-      "times": ["5:15", "13:16"]
-    },
-    {
-      "stop": "Mickiewicza Przedszkole",
-      "times": ["5:17", "13:18", "14:40"]
-    },
-    {
-      "stop": "Mickiewicza Bloki",
-      "times": ["5:18", "13:19", "14:41"]
-    },
-    {
-      "stop": "Wschodnia",
-      "times": ["5:19", "13:20", "14:42"]
-    },
-    {
-      "stop": "Polna Bloki",
-      "times": ["5:20", "13:21", "14:43"]
-    },
-    {
-      "stop": "Polna Słoneczna",
-      "times": ["5:21", "13:23", "14:45"]
-    },
-    {
-      "stop": "Sportowa",
-      "times": ["5:22", "13:24", "14:46"]
-    },
-    {
-      "stop": "Sportowa ORLEN",
-      "times": ["5:24", "13:26", "14:48"]
-    },
-    {
-      "stop": "Miłosna",
-      "times": ["5:27", "13:29", "14:51"]
-    },
-    {
-      "stop": "Bądki PLATI",
-      "times": ["5:29", "13:31", "14:53"]
-    },
-    {
-      "stop": "Miłosna JABIL",
-      "times": ["5:31", "13:33", "14:55"]
+  "direction1": {
+    "title": "DZIEŃ POWSZEDNI",
+    "stops": [
+      {
+        "stop": "Osiedle Sybiraków",
+        "times": [
+          "5:10",
+          "13:10"
+        ]
+      },
+      {
+        "stop": "Sybiraków",
+        "times": [
+          "5:11",
+          "13:11"
+        ]
+      },
+      {
+        "stop": "Sokola Krzywoustego",
+        "times": [
+          "5:12",
+          "13:12"
+        ]
+      },
+      {
+        "stop": "Osiedle Piastowskie",
+        "times": [
+          "5:13",
+          "13:13"
+        ]
+      },
+      {
+        "stop": "Warszawska Chrobrego",
+        "times": [
+          "5:14",
+          "13:15"
+        ]
+      },
+      {
+        "stop": "Daszyńskiego",
+        "times": [
+          "5:15",
+          "13:16"
+        ]
+      },
+      {
+        "stop": "Mickiewicza Przedszkole",
+        "times": [
+          "5:17",
+          "13:18",
+          "14:40"
+        ]
+      },
+      {
+        "stop": "Mickiewicza Bloki",
+        "times": [
+          "5:18",
+          "13:19",
+          "14:41"
+        ]
+      },
+      {
+        "stop": "Wschodnia",
+        "times": [
+          "5:19",
+          "13:20",
+          "14:42"
+        ]
+      },
+      {
+        "stop": "Polna Bloki",
+        "times": [
+          "5:20",
+          "13:21",
+          "14:43"
+        ]
+      },
+      {
+        "stop": "Polna Słoneczna",
+        "times": [
+          "5:21",
+          "13:23",
+          "14:45"
+        ]
+      },
+      {
+        "stop": "Sportowa",
+        "times": [
+          "5:22",
+          "13:24",
+          "14:46"
+        ]
+      },
+      {
+        "stop": "Sportowa ORLEN",
+        "times": [
+          "5:24",
+          "13:26",
+          "14:48"
+        ]
+      },
+      {
+        "stop": "Miłosna",
+        "times": [
+          "5:27",
+          "13:29",
+          "14:51"
+        ]
+      },
+      {
+        "stop": "Bądki PLATI",
+        "times": [
+          "5:29",
+          "13:31",
+          "14:53"
+        ]
+      },
+      {
+        "stop": "Miłosna JABIL",
+        "times": [
+          "5:31",
+          "13:33",
+          "14:55"
+        ]
+      }
+    ]
+  },
+    "direction2": {
+      "title": "DZIEŃ POWSZEDNI",
+      "stops": [
+        {
+          "stop": "Miłosna JABIL",
+          "times": [
+            "6:10",
+            "13:38",
+            "14:10",
+            "15:05"
+          ]
+        },
+        {
+          "stop": "Miłosna PLATI",
+          "times": [
+            "6:12",
+            "13:40",
+            "14:12",
+            "15:07"
+          ]
+        },
+        {
+          "stop": "Miłosna",
+          "times": [
+            "6:14",
+            "13:42",
+            "14:14",
+            "15:09"
+          ]
+        },
+        {
+          "stop": "Sportowa ORLEN",
+          "times": [
+            "6:17",
+            "13:45",
+            "14:17",
+            "15:12"
+          ]
+        },
+        {
+          "stop": "Polna Słoneczna",
+          "times": [
+            "6:19",
+            "13:47",
+            "14:19",
+            "15:14"
+          ]
+        },
+        {
+          "stop": "Polna Bloki",
+          "times": [
+            "6:20",
+            "14:20",
+            "15:15"
+          ]
+        },
+        {
+          "stop": "Wschodnia",
+          "times": [
+            "6:21",
+            "14:21",
+            "15:16"
+          ]
+        },
+        {
+          "stop": "Mickiewicza Bloki",
+          "times": [
+            "6:22",
+            "14:22",
+            "15:17"
+          ]
+        },
+        {
+          "stop": "Mickiewicza Przedszkole",
+          "times": [
+            "6:23",
+            "14:23",
+            "15:18"
+          ]
+        },
+        {
+          "stop": "Warszawska Chrobrego",
+          "times": [
+            "6:25",
+            "14:25",
+            "15:20"
+          ]
+        },
+        {
+          "stop": "Osiedle Piastowskie",
+          "times": [
+            "6:27",
+            "14:27",
+            "15:22"
+          ]
+        },
+        {
+          "stop": "Sokola Krzywoustego",
+          "times": [
+            "6:28",
+            "14:28",
+            "15:23"
+          ]
+        },
+        {
+          "stop": "Sybiraków",
+          "times": [
+            "6:29",
+            "14:29",
+            "15:24"
+          ]
+        },
+        {
+          "stop": "Osiedle Sybiraków",
+          "times": [
+            "6:30",
+            "14:30",
+            "15:25"
+          ]
+        }
+      ]
     }
-  ],
-
-  "direction2": [
-    {
-      "stop": "Miłosna JABIL",
-      "times": ["6:10", "13:38", "14:10", "15:05"]
-    },
-    {
-      "stop": "Miłosna PLATI",
-      "times": ["6:12", "13:40", "14:12", "15:07"]
-    },
-    {
-      "stop": "Miłosna",
-      "times": ["6:14", "13:42", "14:14", "15:09"]
-    },
-    {
-      "stop": "Sportowa ORLEN",
-      "times": ["6:17", "13:45", "14:17", "15:12"]
-    },
-    {
-      "stop": "Polna Słoneczna",
-      "times": ["6:19", "13:47", "14:19", "15:14"]
-    },
-    {
-      "stop": "Polna Bloki",
-      "times": ["6:20", "14:20", "15:15"]
-    },
-    {
-      "stop": "Wschodnia",
-      "times": ["6:21", "14:21", "15:16"]
-    },
-    {
-      "stop": "Mickiewicza Bloki",
-      "times": ["6:22", "14:22", "15:17"]
-    },
-    {
-      "stop": "Mickiewicza Przedszkole",
-      "times": ["6:23", "14:23", "15:18"]
-    },
-    {
-      "stop": "Warszawska Chrobrego",
-      "times": ["6:25", "14:25", "15:20"]
-    },
-    {
-      "stop": "Osiedle Piastowskie",
-      "times": ["6:27", "14:27", "15:22"]
-    },
-    {
-      "stop": "Sokola Krzywoustego",
-      "times": ["6:28", "14:28", "15:23"]
-    },
-    {
-      "stop": "Sybiraków",
-      "times": ["6:29", "14:29", "15:24"]
-    },
-    {
-      "stop": "Osiedle Sybiraków",
-      "times": ["6:30", "14:30", "15:25"]
-    }
-  ]
-}
+  }

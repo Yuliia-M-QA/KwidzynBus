@@ -1,222 +1,444 @@
 {
-  "direction1": [
-    {
-      "stop": "Dworzec PKP",
-      "times": ["5:00", "13:00", "21:00"]
-    },
-    {
-      "stop": "Konopnickiej",
-      "times": ["5:02", "13:02", "21:02"]
-    },
-    {
-      "stop": "Braterstwa Narodów",
-      "times": ["5:04", "13:04", "21:04"]
-    },
-    {
-      "stop": "Malborska Graniczna",
-      "times": ["5:06", "13:06", "21:06"]
-    },
-    {
-      "stop": "Malborska DPS",
-      "times": ["5:07", "13:07", "21:07"]
-    },
-    {
-      "stop": "Malborska Szkoła",
-      "times": ["5:08", "13:08", "21:08"]
-    },
-    {
-      "stop": "Malborska Skrzyżowanie",
-      "times": ["5:09", "13:09", "21:09"]
-    },
-    {
-      "stop": "Długa Skrzyżowanie",
-      "times": ["5:10", "13:10", "21:10"]
-    },
-    {
-      "stop": "Długa Przejazd Kolejowy",
-      "times": ["5:11", "13:11", "21:11"]
-    },
-    {
-      "stop": "Długa",
-      "times": ["5:12", "13:12", "21:12"]
-    },
-    {
-      "stop": "Osiedle Bajkowe",
-      "times": ["5:13", "13:13", "21:13"]
-    },
-    {
-      "stop": "Sokola Krzywoustego",
-      "times": ["5:15", "13:15", "21:15"]
-    },
-    {
-      "stop": "Osiedle Piastowskie",
-      "times": ["5:16", "13:16", "21:16"]
-    },
-    {
-      "stop": "Warszawska Chrobrego",
-      "times": ["5:17", "13:18", "21:17"]
-    },
-    {
-      "stop": "Daszyńskiego",
-      "times": ["5:18", "13:19", "21:18"]
-    },
-    {
-      "stop": "Mickiewicza Przedszkole",
-      "times": ["5:20", "13:21", "21:20"]
-    },
-    {
-      "stop": "Mickiewicza Bloki",
-      "times": ["5:21", "13:22", "21:21"]
-    },
-    {
-      "stop": "Wschodnia",
-      "times": ["5:22", "13:23", "21:22"]
-    },
-    {
-      "stop": "Polna Bloki",
-      "times": ["5:23", "13:24", "21:23"]
-    },
-    {
-      "stop": "Polna Słoneczna",
-      "times": ["5:24", "13:26", "21:24"]
-    },
-    {
-      "stop": "Wiejska Pływalnia",
-      "times": ["5:25", "13:27", "21:25"]
-    },
-    {
-      "stop": "Osiedle Zacisze",
-      "times": ["5:26", "13:29", "21:26"]
-    },
-    {
-      "stop": "Zielna",
-      "times": ["5:27", "13:30", "21:27"]
-    },
-    {
-      "stop": "Lotnicza Jabil",
-      "times": ["5:29", "13:32", "21:29"]
-    },
-    {
-      "stop": "Lotnicza Areszt",
-      "times": ["5:31", "13:34", "21:31"]
-    },
-    {
-      "stop": "Lotnicza Lacroix",
-      "times": ["5:32", "13:35", "21:32"]
-    },
-    {
-      "stop": "Żwirowa PKS",
-      "times": ["5:33", "13:36", "21:33"]
-    },
-    {
-      "stop": "Lotnicza MM",
-      "times": ["5:36", "13:39", "21:36"]
+  "direction1": {
+    "title": "DZIEŃ POWSZEDNI",
+    "stops": [
+      {
+        "stop": "Dworzec PKP",
+        "times": [
+          "5:00",
+          "13:00",
+          "21:00"
+        ]
+      },
+      {
+        "stop": "Konopnickiej",
+        "times": [
+          "5:02",
+          "13:02",
+          "21:02"
+        ]
+      },
+      {
+        "stop": "Braterstwa Narodów",
+        "times": [
+          "5:04",
+          "13:04",
+          "21:04"
+        ]
+      },
+      {
+        "stop": "Malborska Graniczna",
+        "times": [
+          "5:06",
+          "13:06",
+          "21:06"
+        ]
+      },
+      {
+        "stop": "Malborska DPS",
+        "times": [
+          "5:07",
+          "13:07",
+          "21:07"
+        ]
+      },
+      {
+        "stop": "Malborska Szkoła",
+        "times": [
+          "5:08",
+          "13:08",
+          "21:08"
+        ]
+      },
+      {
+        "stop": "Malborska Skrzyżowanie",
+        "times": [
+          "5:09",
+          "13:09",
+          "21:09"
+        ]
+      },
+      {
+        "stop": "Długa Skrzyżowanie",
+        "times": [
+          "5:10",
+          "13:10",
+          "21:10"
+        ]
+      },
+      {
+        "stop": "Długa Przejazd Kolejowy",
+        "times": [
+          "5:11",
+          "13:11",
+          "21:11"
+        ]
+      },
+      {
+        "stop": "Długa",
+        "times": [
+          "5:12",
+          "13:12",
+          "21:12"
+        ]
+      },
+      {
+        "stop": "Osiedle Bajkowe",
+        "times": [
+          "5:13",
+          "13:13",
+          "21:13"
+        ]
+      },
+      {
+        "stop": "Sokola Krzywoustego",
+        "times": [
+          "5:15",
+          "13:15",
+          "21:15"
+        ]
+      },
+      {
+        "stop": "Osiedle Piastowskie",
+        "times": [
+          "5:16",
+          "13:16",
+          "21:16"
+        ]
+      },
+      {
+        "stop": "Warszawska Chrobrego",
+        "times": [
+          "5:17",
+          "13:18",
+          "21:17"
+        ]
+      },
+      {
+        "stop": "Daszyńskiego",
+        "times": [
+          "5:18",
+          "13:19",
+          "21:18"
+        ]
+      },
+      {
+        "stop": "Mickiewicza Przedszkole",
+        "times": [
+          "5:20",
+          "13:21",
+          "21:20"
+        ]
+      },
+      {
+        "stop": "Mickiewicza Bloki",
+        "times": [
+          "5:21",
+          "13:22",
+          "21:21"
+        ]
+      },
+      {
+        "stop": "Wschodnia",
+        "times": [
+          "5:22",
+          "13:23",
+          "21:22"
+        ]
+      },
+      {
+        "stop": "Polna Bloki",
+        "times": [
+          "5:23",
+          "13:24",
+          "21:23"
+        ]
+      },
+      {
+        "stop": "Polna Słoneczna",
+        "times": [
+          "5:24",
+          "13:26",
+          "21:24"
+        ]
+      },
+      {
+        "stop": "Wiejska Pływalnia",
+        "times": [
+          "5:25",
+          "13:27",
+          "21:25"
+        ]
+      },
+      {
+        "stop": "Osiedle Zacisze",
+        "times": [
+          "5:26",
+          "13:29",
+          "21:26"
+        ]
+      },
+      {
+        "stop": "Zielna",
+        "times": [
+          "5:27",
+          "13:30",
+          "21:27"
+        ]
+      },
+      {
+        "stop": "Lotnicza Jabil",
+        "times": [
+          "5:29",
+          "13:32",
+          "21:29"
+        ]
+      },
+      {
+        "stop": "Lotnicza Areszt",
+        "times": [
+          "5:31",
+          "13:34",
+          "21:31"
+        ]
+      },
+      {
+        "stop": "Lotnicza Lacroix",
+        "times": [
+          "5:32",
+          "13:35",
+          "21:32"
+        ]
+      },
+      {
+        "stop": "Żwirowa PKS",
+        "times": [
+          "5:33",
+          "13:36",
+          "21:33"
+        ]
+      },
+      {
+        "stop": "Lotnicza MM",
+        "times": [
+          "5:36",
+          "13:39",
+          "21:36"
+        ]
+      }
+    ]
+  },
+    "direction2": {
+      "title": "DZIEŃ POWSZEDNI",
+      "stops": [
+        {
+          "stop": "Lotnicza MM",
+          "times": [
+            "6:15",
+            "14:15",
+            "22:15"
+          ]
+        },
+        {
+          "stop": "Żwirowa PKS",
+          "times": [
+            "6:17",
+            "14:17",
+            "22:17"
+          ]
+        },
+        {
+          "stop": "Lotnicza Lacroix",
+          "times": [
+            "6:18",
+            "14:18",
+            "22:18"
+          ]
+        },
+        {
+          "stop": "Lotnicza Areszt",
+          "times": [
+            "6:19",
+            "14:19",
+            "22:19"
+          ]
+        },
+        {
+          "stop": "Lotnicza Jabil",
+          "times": [
+            "6:21",
+            "14:21",
+            "22:21"
+          ]
+        },
+        {
+          "stop": "Zielna",
+          "times": [
+            "6:23",
+            "14:23",
+            "22:23"
+          ]
+        },
+        {
+          "stop": "Osiedle Zacisze",
+          "times": [
+            "6:24",
+            "14:24",
+            "22:24"
+          ]
+        },
+        {
+          "stop": "Wiejska Pływalnia",
+          "times": [
+            "6:25",
+            "14:26",
+            "22:25"
+          ]
+        },
+        {
+          "stop": "Polna Słoneczna",
+          "times": [
+            "6:26",
+            "14:27",
+            "22:26"
+          ]
+        },
+        {
+          "stop": "Polna Bloki",
+          "times": [
+            "6:27",
+            "14:28",
+            "22:27"
+          ]
+        },
+        {
+          "stop": "Wschodnia",
+          "times": [
+            "6:28",
+            "14:29",
+            "22:28"
+          ]
+        },
+        {
+          "stop": "Mickiewicza Bloki",
+          "times": [
+            "6:29",
+            "14:30",
+            "22:29"
+          ]
+        },
+        {
+          "stop": "Mickiewicza Przedszkole",
+          "times": [
+            "6:30",
+            "14:31",
+            "22:30"
+          ]
+        },
+        {
+          "stop": "Warszawska Chrobrego",
+          "times": [
+            "6:32",
+            "14:33",
+            "22:32"
+          ]
+        },
+        {
+          "stop": "Osiedle Piastowskie",
+          "times": [
+            "6:34",
+            "14:35",
+            "22:34"
+          ]
+        },
+        {
+          "stop": "Sokola Krzywoustego",
+          "times": [
+            "6:35",
+            "14:36",
+            "22:35"
+          ]
+        },
+        {
+          "stop": "Osiedle Bajkowe",
+          "times": [
+            "6:36",
+            "14:37",
+            "22:36"
+          ]
+        },
+        {
+          "stop": "Długa Przejazd Kolejowy",
+          "times": [
+            "6:37",
+            "14:38",
+            "22:37"
+          ]
+        },
+        {
+          "stop": "Długa Skrzyżowanie",
+          "times": [
+            "6:38",
+            "14:39",
+            "22:38"
+          ]
+        },
+        {
+          "stop": "Malborska Skrzyżowanie",
+          "times": [
+            "6:39",
+            "14:40",
+            "22:39"
+          ]
+        },
+        {
+          "stop": "Malborska Szkoła",
+          "times": [
+            "6:40",
+            "14:41",
+            "22:40"
+          ]
+        },
+        {
+          "stop": "Malborska DPS",
+          "times": [
+            "6:41",
+            "14:42",
+            "22:41"
+          ]
+        },
+        {
+          "stop": "Malborska Graniczna",
+          "times": [
+            "6:42",
+            "14:43",
+            "22:42"
+          ]
+        },
+        {
+          "stop": "Braterstwa Narodów",
+          "times": [
+            "6:44",
+            "14:45",
+            "22:44"
+          ]
+        },
+        {
+          "stop": "Konopnickiej",
+          "times": [
+            "6:46",
+            "14:47",
+            "22:46"
+          ]
+        },
+        {
+          "stop": "Dworzec PKP",
+          "times": [
+            "6:48",
+            "14:49",
+            "22:48"
+          ]
+        }
+      ]
     }
-  ],
-  "direction2": [
-    {
-      "stop": "Lotnicza MM",
-      "times": ["6:15", "14:15", "22:15"]
-    },
-    {
-      "stop": "Żwirowa PKS",
-      "times": ["6:17", "14:17", "22:17"]
-    },
-    {
-      "stop": "Lotnicza Lacroix",
-      "times": ["6:18", "14:18", "22:18"]
-    },
-    {
-      "stop": "Lotnicza Areszt",
-      "times": ["6:19", "14:19", "22:19"]
-    },
-    {
-      "stop": "Lotnicza Jabil",
-      "times": ["6:21", "14:21", "22:21"]
-    },
-    {
-      "stop": "Zielna",
-      "times": ["6:23", "14:23", "22:23"]
-    },
-    {
-      "stop": "Osiedle Zacisze",
-      "times": ["6:24", "14:24", "22:24"]
-    },
-    {
-      "stop": "Wiejska Pływalnia",
-      "times": ["6:25", "14:26", "22:25"]
-    },
-    {
-      "stop": "Polna Słoneczna",
-      "times": ["6:26", "14:27", "22:26"]
-    },
-    {
-      "stop": "Polna Bloki",
-      "times": ["6:27", "14:28", "22:27"]
-    },
-    {
-      "stop": "Wschodnia",
-      "times": ["6:28", "14:29", "22:28"]
-    },
-    {
-      "stop": "Mickiewicza Bloki",
-      "times": ["6:29", "14:30", "22:29"]
-    },
-    {
-      "stop": "Mickiewicza Przedszkole",
-      "times": ["6:30", "14:31", "22:30"]
-    },
-    {
-      "stop": "Warszawska Chrobrego",
-      "times": ["6:32", "14:33", "22:32"]
-    },
-    {
-      "stop": "Osiedle Piastowskie",
-      "times": ["6:34", "14:35", "22:34"]
-    },
-    {
-      "stop": "Sokola Krzywoustego",
-      "times": ["6:35", "14:36", "22:35"]
-    },
-    {
-      "stop": "Osiedle Bajkowe",
-      "times": ["6:36", "14:37", "22:36"]
-    },
-    {
-      "stop": "Długa Przejazd Kolejowy",
-      "times": ["6:37", "14:38", "22:37"]
-    },
-    {
-      "stop": "Długa Skrzyżowanie",
-      "times": ["6:38", "14:39", "22:38"]
-    },
-    {
-      "stop": "Malborska Skrzyżowanie",
-      "times": ["6:39", "14:40", "22:39"]
-    },
-    {
-      "stop": "Malborska Szkoła",
-      "times": ["6:40", "14:41", "22:40"]
-    },
-    {
-      "stop": "Malborska DPS",
-      "times": ["6:41", "14:42", "22:41"]
-    },
-    {
-      "stop": "Malborska Graniczna",
-      "times": ["6:42", "14:43", "22:42"]
-    },
-    {
-      "stop": "Braterstwa Narodów",
-      "times": ["6:44", "14:45", "22:44"]
-    },
-    {
-      "stop": "Konopnickiej",
-      "times": ["6:46", "14:47", "22:46"]
-    },
-    {
-      "stop": "Dworzec PKP",
-      "times": ["6:48", "14:49", "22:48"]
-    }
-  ]
-}
+  }

@@ -53,6 +53,11 @@ class MainActivity : ComponentActivity() {
 // DATA CLASS
 // =====================================================
 
+data class BusSchedule(
+    val title: String,
+    val stops: List<BusStop>
+)
+
 data class BusStop(
     val stop: String,
     val times: List<String>
@@ -66,7 +71,9 @@ fun loadSchedule(
     context: Context,
     fileName: String,
     direction: String
-): List<BusStop> {
+): BusSchedule {
+
+    var title = ""
 
     val result = mutableListOf<BusStop>()
 
@@ -81,21 +88,43 @@ fun loadSchedule(
 
         if (jsonObject.has(direction)) {
 
+            val directionObject =
+                jsonObject.getJSONObject(direction)
+
+
+            // =========================
+            // TITLE
+            // =========================
+
+            title =
+                directionObject.getString("title")
+
+            // =========================
+            // STOPS
+            // =========================
+
             val directionArray =
-                jsonObject.getJSONArray(direction)
+                directionObject.getJSONArray("stops")
 
             for (i in 0 until directionArray.length()) {
 
-                val item = directionArray.getJSONObject(i)
+                val item =
+                    directionArray.getJSONObject(i)
 
-                val stop = item.getString("stop")
+                val stop =
+                    item.getString("stop")
 
-                val timesJson = item.getJSONArray("times")
+                val timesJson =
+                    item.getJSONArray("times")
 
-                val timesList = mutableListOf<String>()
+                val timesList =
+                    mutableListOf<String>()
 
                 for (j in 0 until timesJson.length()) {
-                    timesList.add(timesJson.getString(j))
+
+                    timesList.add(
+                        timesJson.getString(j)
+                    )
                 }
 
                 result.add(
@@ -108,12 +137,15 @@ fun loadSchedule(
         }
 
     } catch (e: Exception) {
+
         e.printStackTrace()
     }
 
-    return result
+    return BusSchedule(
+        title = title,
+        stops = result
+    )
 }
-
 // =====================================================
 // ZOOMABLE IMAGE
 // =====================================================
@@ -195,6 +227,34 @@ fun BusScreen() {
         mutableStateOf("direction1")
     }
 
+// =====================================================
+// BACK HANDLER
+// =====================================================
+
+    // =====================================================
+// BACK HANDLER
+// =====================================================
+
+    BackHandler(enabled = currentScreen != "home") {
+
+        when {
+
+            // timetable -> line list
+            selectedLine != null -> {
+                selectedLine = null
+            }
+
+            // line list -> category list
+            selectedCategory != null -> {
+                selectedCategory = null
+            }
+
+            // schedule/map/prices -> home
+            currentScreen != "home" -> {
+                currentScreen = "home"
+            }
+        }
+    }
 
     // =====================================================
     // DATA
@@ -255,7 +315,7 @@ fun BusScreen() {
             ?: "schedule_1p.json"
     }
 
-    val stops = remember(
+    val schedule = remember(
         selectedFile,
         selectedDirection
     ) {
@@ -341,35 +401,6 @@ fun BusScreen() {
             }
         }
 
-// =====================================================
-// BACK HANDLER
-// =====================================================
-
-        BackHandler {
-
-            when {
-
-                // Якщо відкритий конкретний розклад
-                selectedLine != null -> {
-                    selectedLine = null
-                }
-
-                // Якщо відкритий список напрямків
-                selectedCategory != null -> {
-                    selectedCategory = null
-                }
-
-                // Якщо відкритий будь-який екран
-                // повертаємось на home
-                currentScreen != "home" -> {
-
-                    currentScreen = "home"
-
-                    selectedCategory = null
-                    selectedLine = null
-                }
-            }
-        }
 
         // =====================================================
         // MAP SCREEN
@@ -614,6 +645,33 @@ fun BusScreen() {
                         // STOPS
                         // =====================================================
 
+                        if (schedule.title.isNotEmpty()) {
+
+                            Card(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(horizontal = 16.dp),
+
+                                colors = CardDefaults.cardColors(
+                                    containerColor = Color(0xCC000000)
+                                ),
+
+                                shape = RoundedCornerShape(20.dp)
+                            ) {
+
+                                Text(
+                                    text = schedule.title,
+                                    color = Color(0xFFFFF59D),
+
+                                    modifier = Modifier.padding(16.dp),
+
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Bold
+                                )
+                            }
+
+                            Spacer(modifier = Modifier.height(12.dp))
+                        }
                         LazyColumn(
                             modifier = Modifier
                                 .fillMaxSize()
@@ -622,7 +680,7 @@ fun BusScreen() {
                             verticalArrangement = Arrangement.spacedBy(8.dp)
                         ) {
 
-                            items(stops) { busStop ->
+                            items(schedule.stops) { busStop ->
 
                                 var expanded by remember {
                                     mutableStateOf(false)
@@ -648,11 +706,7 @@ fun BusScreen() {
                                     ) {
 
                                         Text(
-                                            text =
-                                                if (expanded)
-                                                    "▼ ${busStop.stop}"
-                                                else
-                                                    "▶ ${busStop.stop}",
+                                            text = busStop.stop,
                                             color = Color.White,
                                             style = MaterialTheme.typography.titleMedium
                                         )
