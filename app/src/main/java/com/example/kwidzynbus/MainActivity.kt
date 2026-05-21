@@ -231,28 +231,24 @@ fun BusScreen() {
 // BACK HANDLER
 // =====================================================
 
-    // =====================================================
-// BACK HANDLER
-// =====================================================
+    BackHandler {
 
-    BackHandler(enabled = currentScreen != "home") {
+        if (selectedLine != null) {
 
-        when {
+            selectedLine = null
+            return@BackHandler
+        }
 
-            // timetable -> line list
-            selectedLine != null -> {
-                selectedLine = null
-            }
+        if (selectedCategory != null) {
 
-            // line list -> category list
-            selectedCategory != null -> {
-                selectedCategory = null
-            }
+            selectedCategory = null
+            return@BackHandler
+        }
 
-            // schedule/map/prices -> home
-            currentScreen != "home" -> {
-                currentScreen = "home"
-            }
+        if (currentScreen != "home") {
+
+            currentScreen = "home"
+            return@BackHandler
         }
     }
 
@@ -306,26 +302,18 @@ fun BusScreen() {
         )
     )
 
-    val selectedFile = remember(selectedLine) {
-
+    val selectedFile =
         categories.values
             .flatten()
             .find { it.first == selectedLine }
             ?.second
             ?: "schedule_1p.json"
-    }
 
-    val schedule = remember(
-        selectedFile,
-        selectedDirection
-    ) {
-
-        loadSchedule(
-            context = context,
-            fileName = selectedFile,
-            direction = selectedDirection
-        )
-    }
+    val schedule = loadSchedule(
+        context = context,
+        fileName = selectedFile,
+        direction = selectedDirection
+    )
 
     // =====================================================
     // BACKGROUND
@@ -516,7 +504,7 @@ fun BusScreen() {
                             }
 
                             Text(
-                                text = selectedCategory!!,
+                                text = selectedCategory ?: "",
                                 color = Color.White,
                                 style = MaterialTheme.typography.titleLarge
                             )
@@ -527,7 +515,7 @@ fun BusScreen() {
                             verticalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
 
-                            items(categories[selectedCategory!!]!!) { line ->
+                            items(categories[selectedCategory] ?: emptyList()) { line ->
 
                                 Button(
                                     onClick = {
@@ -581,7 +569,7 @@ fun BusScreen() {
                             }
 
                             Text(
-                                text = selectedLine!!,
+                                text = selectedLine ?: "",
                                 color = Color.White,
                                 style = MaterialTheme.typography.titleLarge
                             )
