@@ -29,6 +29,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import org.json.JSONObject
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+
 
 // =====================================================
 // MAIN ACTIVITY
@@ -211,19 +215,19 @@ fun BusScreen() {
     // NAVIGATION
     // =====================================================
 
-    var currentScreen by remember {
+    var currentScreen by rememberSaveable {
         mutableStateOf("home")
     }
 
-    var selectedCategory by remember {
+    var selectedCategory by rememberSaveable {
         mutableStateOf<String?>(null)
     }
 
-    var selectedLine by remember {
+    var selectedLine by rememberSaveable {
         mutableStateOf<String?>(null)
     }
 
-    var selectedDirection by remember {
+    var selectedDirection by rememberSaveable {
         mutableStateOf("direction1")
     }
 
@@ -347,10 +351,12 @@ fun BusScreen() {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(24.dp),
+                    .padding(24.dp)
+                    .verticalScroll(rememberScrollState()),
 
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
+
             ) {
 
                 Text(
